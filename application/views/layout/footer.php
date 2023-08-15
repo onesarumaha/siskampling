@@ -1,6 +1,6 @@
 
 			<!-- Footer start -->
-			<footer class="main-footer">© Wafi 2020</footer>
+			<footer class="main-footer">Perumahan Prima Indah © <?= date('Y') ?></footer>
 			<!-- Footer end -->
 
 		</div>

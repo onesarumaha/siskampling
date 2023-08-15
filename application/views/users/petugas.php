@@ -19,6 +19,7 @@
 											<tr>
 												<th>No</th>
 												<th>Nama Lengkap</th>
+												<th>Email</th>
 												<th>Tempat / Tanggal Lahir</th>
 												<th>Alamat</th>
 												<th>Option</th>
@@ -31,6 +32,7 @@
 											<tr>
 												<td><?= $no++; ?></td>
 												<td><?= $ptg['nama'] ?></td>
+												<td><?= $ptg['email'] ?></td>
 												<td><?= $ptg['tmpt_lahir'] ?>, <?= date("d-m-Y", strtotime( $ptg['tgl_lahir']))?></td>
 												<td><?= $ptg['alamat'] ?></td>
 												<td>
@@ -59,6 +61,12 @@
 				<label>Nama Lengkap</label>
 				<input type="text" value="<?= $ptg['nama'] ?>" class="form-control" id="nama" name="nama" placeholder="Nama Lengkap">
 				<?php echo form_error('nama','<small class="text-danger pl-3">','</small>'); ?>
+			</div>
+
+			<div class="form-group">
+				<label>Email</label>
+				<input type="text" class="form-control" value="<?= $ptg['email'] ?>" id="email" name="email" placeholder="Email">
+				<?php echo form_error('email','<small class="text-danger pl-3">','</small>'); ?>
 			</div>
 
 			<div class="form-group">
@@ -142,6 +150,12 @@
 				<label>Nama Lengkap</label>
 				<input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Lengkap">
 				<?php echo form_error('nama','<small class="text-danger pl-3">','</small>'); ?>
+			</div>
+
+			<div class="form-group">
+				<label>Email</label>
+				<input type="text" class="form-control" id="email" name="email" placeholder="Email">
+				<?php echo form_error('email','<small class="text-danger pl-3">','</small>'); ?>
 			</div>
 
 			<div class="form-group">

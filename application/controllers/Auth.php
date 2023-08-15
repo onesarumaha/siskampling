@@ -5,7 +5,7 @@ class Auth extends CI_Controller {
 
 	public function index()
 	{
-		$data['title'] = 'Login';
+		$data['title'] = 'Login | Perumahan Prima Indah';
 
 		$this->form_validation->set_rules('username', 'Username', 'required');
 		$this->form_validation->set_rules('password', 'Password', 'required');
@@ -55,7 +55,7 @@ class Auth extends CI_Controller {
 
 	public function daftar()
 	{
-		$data['title'] = 'Daftar';
+		$data['title'] = 'Daftar | Perumahan Prima Indah';
 		$this->load->view('auth/daftar', $data);
 	}
 
@@ -83,7 +83,7 @@ class Auth extends CI_Controller {
 		]);
 		
 		if($this->form_validation->run() == false){
-			$data['title'] = 'Daftar';
+			$data['title'] = 'Daftar | Perumahan Prima Indah';
 			$this->load->view('Auth/daftar',$data);
 
 		}else{
@@ -93,7 +93,7 @@ class Auth extends CI_Controller {
 				'username' => htmlspecialchars($this->input->post('username', true)),
 				'password' => password_hash($this->input->post('password'), PASSWORD_DEFAULT),
 
-				'akses' => 'Warga'
+				'akses' => 'Kepala Kelurahan'
 			];
 
 			$this->db->insert('users', $data);

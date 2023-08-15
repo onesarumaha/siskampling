@@ -33,6 +33,7 @@ class User extends CI_Controller {
 		$data['title'] = 'Data Warga';
 
 		$this->form_validation->set_rules('nama', 'Nama Lengkap', 'trim|required');
+		$this->form_validation->set_rules('email', 'Email Petugas', 'trim|required');
 		$this->form_validation->set_rules('tmpt_lahir', 'Tempat Lahir', 'trim|required');
 		$this->form_validation->set_rules('tgl_lahir', 'Tanggal Lahir', 'trim|required');
 		$this->form_validation->set_rules('username', 'username', 'trim|required');

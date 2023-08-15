@@ -35,7 +35,7 @@
 													<td><?= $jdw['shift'] ?></td>
 													<td>
 														<a class="hapus-jadwal" href="<?= base_url("Jadwal/hapus_jadwal/") ?><?= $jdw['id_jadwal'] ?>"><button class="btn btn-danger "><span class="icon-trash-2"></span></button></a>
-														<button class="btn btn-warning" data-toggle="modal" data-target="#exampleModalganti<?= $jdw['id_jadwal'] ?>"><span class="icon-compare_arrows"></span></button>
+														
 													
 
 													</td>

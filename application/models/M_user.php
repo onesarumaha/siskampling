@@ -22,6 +22,7 @@ class M_user extends CI_Model {
 
 		$data = [
 				'nama' => htmlspecialchars($this->input->post('nama', true)),
+				'email' => htmlspecialchars($this->input->post('email', true)),
 				'tmpt_lahir' => htmlspecialchars($this->input->post('tmpt_lahir', true)),
 				'tgl_lahir' => htmlspecialchars($this->input->post('tgl_lahir', true)),
 				'username' => htmlspecialchars($this->input->post('username', true)),
@@ -42,6 +43,7 @@ class M_user extends CI_Model {
 
 		$data = [
 				'nama' => htmlspecialchars($this->input->post('nama', true)),
+				'email' => htmlspecialchars($this->input->post('email', true)),
 				'tmpt_lahir' => htmlspecialchars($this->input->post('tmpt_lahir', true)),
 				'tgl_lahir' => htmlspecialchars($this->input->post('tgl_lahir', true)),
 				'username' => htmlspecialchars($this->input->post('username', true)),

@@ -11,7 +11,7 @@
 		<link rel="shortcut icon" href="<?= base_url('assets/frontend/') ?>img/fav.png" />
 
 		<!-- Title -->
-		<title><?= $title ?></title>
+		<title><?= $title ?> | Perumahan Prima Indah</title>
 
 
 		<!-- *************
@@ -26,6 +26,7 @@
 		<!-- Main css -->
 		<link rel="stylesheet" href="<?= base_url('assets/frontend/') ?>css/main.css">
 
+		<link rel="stylesheet" href="<?= base_url('assets/frontend/') ?>vendor/circliful/circliful.css" />
 
 		<!-- *************
 			************ Vendor Css Files *************
@@ -47,9 +48,9 @@
 	<body>
 
 		<!-- Loading starts -->
-		<!-- <div id="loading-wrapper">
+		<div id="loading-wrapper">
 			<div class="spinner-border" role="status">
 				<span class="sr-only">Loading...</span>
 			</div>
-		</div> -->
+		</div>
 		<!-- Loading ends -->

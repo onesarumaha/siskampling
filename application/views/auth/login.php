@@ -35,10 +35,13 @@
 					<div class="col-xl-4 col-lg-5 col-md-6 col-sm-12">
 						<div class="login-screen">
 							<div class="login-box">
-								<a href="#" class="login-logo">
-									<img src="<?= base_url('assets/frontend/') ?>img/logo-dark.png" alt="Wafi Admin Dashboard" />
-								</a>
-								<h5>LOGIN</h5>
+								<h5 class="text-center">L O G I N</h5>
+
+								<h5 class="text-center">SISTEM INFORMASI PATROLI PERUMAHAN PRIMA INDAH</h5>
+
+								<!-- <a href="#" class="login-logo text-center">
+									<img src="<?= base_url('assets/frontend/') ?>img/1234.png" alt="Wafi Admin Dashboard" />
+								</a> -->
                                <?= $this->session->flashdata('notif'); ?>
 
 								<div class="form-group">
@@ -56,10 +59,10 @@
 								</div>
 								
 								<hr>
-								<div class="actions align-left">
+								<!-- <div class="actions align-left">
 									<span class="additional-link">Belum punya akun ?</span>
 									<a href="<?= base_url('auth/daftar') ?>" class="btn btn-dark">Buat akun</a>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>

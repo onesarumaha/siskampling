@@ -7,7 +7,8 @@ class Dashboard extends CI_Controller {
 		$this->load->library('form_validation');
 		$this->load->model('M_user');
 		$this->load->model('M_jadwal');
-		if($this->session->userdata('akses')!= "Admin" & $this->session->userdata('akses')!="Petugas" & $this->session->userdata('akses')!="Warga" ) {
+		$this->load->model('M_patroli');
+		if($this->session->userdata('akses')!= "Admin" & $this->session->userdata('akses')!="Petugas" & $this->session->userdata('akses')!="Kepala Kelurahan" ) {
 			redirect(base_url('auth'));
 		}
 		
@@ -24,6 +25,11 @@ class Dashboard extends CI_Controller {
 		$data['jumat'] = $this->M_jadwal->getJadwalJumat();
 		$data['sabtu'] = $this->M_jadwal->getJadwalSabtu();
 		$data['minggu'] = $this->M_jadwal->getJadwalMinggu();
+
+		$data['shift'] = $this->M_jadwal->getGantiShifta();
+		$data['petugas'] = $this->M_user->getPetugas();
+		$data['patroli'] = $this->M_patroli->getPatrolia();
+		$data['jadwalDas'] = $this->M_jadwal->getJadwalDash();
 
 		$this->load->view('layout/header', $data);
 		$this->load->view('layout/navbar');

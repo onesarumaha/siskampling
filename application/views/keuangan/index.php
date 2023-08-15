@@ -21,7 +21,6 @@
 												<th>Jenis Transaksi </th>
 												<th>Kategori Transaksi </th>
 												<th>Nominal</th>
-												<th>Status</th>
 												<th>Keterangan</th>
 												<th>Option</th>
 											</tr>
@@ -39,7 +38,6 @@
 													<td><?= $iu['jns_trans'] ?></td>
 													<td><?= $iu['kategori_trans'] ?></td>
 													<td>Rp. <?= number_format($iu['nominal']) ?></td>
-													<td><?= $iu['status'] ?></td>
 													<td><?= $iu['ket'] ?></td>
 													
 													<td>
@@ -126,7 +124,7 @@
 				</div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-        <button type="submit" class="btn btn-primary">Approve</button>
+        <!-- <button type="submit" class="btn btn-primary">Approve</button> -->
 
       </div>
       </form>
